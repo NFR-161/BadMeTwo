@@ -28,37 +28,39 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="398dp"
-        android:layout_height="584dp"
-        android:paddingEnd="3dp"
+        android:layout_width="408dp"
+        android:layout_height="573dp"
+        android:paddingStart="27dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/imageHill"
-            android:layout_width="359dp"
-            android:layout_height="110dp"
+            android:layout_width="358dp"
+            android:layout_height="163dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="190dp"
             android:src="@drawable/hill"
             app:layout_constraintBottom_toTopOf="@+id/imageWheel"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.589"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.65" />
+            app:layout_constraintVertical_bias="0.585" />
 
         <ImageView
             android:id="@+id/imageWheel"
-            android:layout_width="323dp"
-            android:layout_height="286dp"
-            android:layout_marginBottom="88dp"
+            android:layout_width="289dp"
+            android:layout_height="293dp"
+            android:layout_marginBottom="84dp"
             android:background="@drawable/wheel"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent" />
+
 
         <ImageView
             android:id="@+id/powerButton"
@@ -67,29 +69,33 @@
             android:src="@drawable/spin_button"
             app:layout_constraintBottom_toBottomOf="@+id/imageWheel"
             app:layout_constraintEnd_toEndOf="@+id/imageWheel"
+            app:layout_constraintHorizontal_bias="0.512"
             app:layout_constraintStart_toStartOf="@+id/imageWheel"
-            app:layout_constraintTop_toBottomOf="@+id/imageHill" />
-
+            app:layout_constraintTop_toBottomOf="@+id/imageHill"
+            app:layout_constraintVertical_bias="0.36" />
 
         <ImageView
             android:id="@+id/imageCircle"
-            android:layout_width="388dp"
-            android:layout_height="360dp"
-            android:layout_marginBottom="52dp"
+            android:layout_width="429dp"
+            android:layout_height="351dp"
+            android:layout_marginBottom="56dp"
             android:src="@drawable/circle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.476"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imagePointer"
-            android:layout_width="114dp"
-            android:layout_height="65dp"
-            android:layout_marginStart="144dp"
-            android:layout_marginTop="136dp"
+            android:layout_width="74dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="5dp"
             android:src="@drawable/pointer"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTop="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
