@@ -21,7 +21,7 @@ import kotlin.random.Random
 
 
 class DiceRollerFragment : Fragment() {
-
+    
     lateinit var scope: CoroutineScope
 
     var delayTime = 20
@@ -43,8 +43,6 @@ class DiceRollerFragment : Fragment() {
     var mp: MediaPlayer? = null
     val random = java.util.Random()
 
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -61,7 +59,6 @@ class DiceRollerFragment : Fragment() {
         die2 = view.findViewById(R.id.die2);
         // Instantiate the MediaPlayer object
         mp = MediaPlayer.create(requireContext(), R.raw.app_src_main_res_raw_roll)
-
 
         diceContainer.setOnClickListener {
             rollDice()
@@ -89,7 +86,6 @@ class DiceRollerFragment : Fragment() {
                 .duration(200)
                 .repeat(0)
                 .playOn(die2);
-
 
             mp?.start()
         }

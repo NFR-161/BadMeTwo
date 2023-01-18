@@ -3,4 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="touch">Нажми на экран, чтобы кинуть кости</string>
+    <string name="touch_yellow_button">Нажми SPIN для прокрутки</string>
+
+
 </resources>
