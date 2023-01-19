@@ -89,7 +89,7 @@
             android:id="@+id/imagePointer"
             android:layout_width="74dp"
             android:layout_height="55dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="9dp"
             android:layout_marginTop="140dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/pointer"
