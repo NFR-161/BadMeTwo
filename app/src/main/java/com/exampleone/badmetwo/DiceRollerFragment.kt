@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -39,6 +40,7 @@ class DiceRollerFragment : Fragment() {
     var tvHelp: TextView? = null
     var die1: ImageView? = null
     var die2: ImageView? = null
+    lateinit var testButton:Button
     lateinit var diceContainer: LinearLayout
     var mp: MediaPlayer? = null
     val random = java.util.Random()
@@ -59,9 +61,13 @@ class DiceRollerFragment : Fragment() {
         die2 = view.findViewById(R.id.die2);
         // Instantiate the MediaPlayer object
         mp = MediaPlayer.create(requireContext(), R.raw.app_src_main_res_raw_roll)
+        testButton = view.findViewById(R.id.test_bt)
 
         diceContainer.setOnClickListener {
             rollDice()
+        }
+        testButton.setOnClickListener {
+           activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.main, SpinningGameFragment())?.commit()
         }
     }
 
